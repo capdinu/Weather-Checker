@@ -1,13 +1,15 @@
-/* General body styles */
+/* General body styles with dark background */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #2C3E50; /* Dark background */
+    color: #ECF0F1; /* Light text for dark theme */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   
   /* Weather app container */
@@ -16,40 +18,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Container with new color palette */
-  .container {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 30px;
-    width: 300px;
-    text-align: center;
-    border: 2px solid #4CAF50;
-  }
-  
-  /* Title of the app */
-  h1 {
-    color: #4CAF50;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Input field for city name */
-  input {
     padding: 10px;
-    width: 100%;
-    border: 2px solid #4CAF50;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 16px;
   }
   
-  /* Button style */
+  /* Container with a clean white background */
+  .container {
+    background-color: #34495E; /* Dark container background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid #2980B9; /* Blue border */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  /* Title of the app with a light blue color */
+  h1 {
+    color: #2980B9; /* Light blue color for the title */
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and button block */
+  .input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field with a simple light border */
+  input {
+    padding: 12px;
+    width: 100%;
+    border: 2px solid #2980B9; /* Light blue border for input */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #34495E; /* Dark background for input */
+    color: #ECF0F1; /* Light text color */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  
+  /* Button style with light blue color */
   button {
     padding: 12px 24px;
-    background-color: #4CAF50;
+    background-color: #2980B9; /* Light blue button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -59,18 +74,47 @@ body {
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #3498DB; /* Light blue on hover */
   }
   
   /* Weather information display */
   .weather-info {
     margin-top: 20px;
     font-size: 16px;
-    color: #333;
+    color: #ECF0F1; /* Light text color */
+    border-top: 2px solid #2980B9;
+    padding-top: 10px;
   }
   
-  /* Error message styling */
+  /* Error message styling with soft red color */
   .weather-info p {
-    color: red;
+    color: #E74C3C; /* Red color for error messages */
+  }
+  
+  /* Media Query for mobile responsiveness */
+  @media (max-width: 600px) {
+    /* Adjusting font size and padding for mobile devices */
+    h1 {
+      font-size: 24px;
+    }
+  
+    .container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    input {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .weather-info {
+      font-size: 14px;
+    }
   }
   
