@@ -6,7 +6,7 @@ async function getWeather() {
   const weatherInfo = document.getElementById('weatherInfo');
   
   if (!city) {
-    weatherInfo.innerHTML = "<p style='color: red;'>Please enter a city name.</p>";
+    weatherInfo.innerHTML = "<p>Please enter a city name.</p>";
     return;
   }
 
@@ -27,6 +27,6 @@ async function getWeather() {
       <img src="${current.condition.icon}" alt="${current.condition.text}">
     `;
   } catch (error) {
-    weatherInfo.innerHTML = `<p style='color: red;'>City not found. Please try again.</p>`;
+    weatherInfo.innerHTML = `<p>City not found. Please try again.</p>`;
   }
 }

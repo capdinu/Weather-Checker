@@ -1,0 +1,76 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Weather app container */
+  .weather-app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container with new color palette */
+  .container {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #4CAF50;
+  }
+  
+  /* Title of the app */
+  h1 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field for city name */
+  input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  /* Button style */
+  button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Weather information display */
+  .weather-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Error message styling */
+  .weather-info p {
+    color: red;
+  }
+  
